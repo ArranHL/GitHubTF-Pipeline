@@ -14,6 +14,7 @@ try {
   stage('init') {
       node {
         // The Credentials binding plugin allows for the Vault token to be associated with the Vault’s address 
+        // Replace the values for credentialsId and vaultAddr
        withCredentials([[
       $class: 'VaultTokenCredentialBinding', 
    credentialsId: 'YOUR_VAULT_TOKEN', 
