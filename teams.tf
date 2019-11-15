@@ -1,4 +1,6 @@
- provider "github" {
+ # These are permanant variables that the flow requires
+# DO NOT DELETE OR CHANGE
+provider "github" {
  organization = "${var.github_organization}"
  token        = "${var.TOKEN}"  
   } 
